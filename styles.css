@@ -1,0 +1,56 @@
+.font-headings{
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.font-text{
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.font-normal{
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+}
+
+.font-nav{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.button-main{
+    background-color: #057894;
+    color: white;
+}
+
+.button-main:hover{
+    background-color: #24c7f0;
+}
+
+.btn-second{
+    background-color: #735DA5;
+    color: white;
+    border: none;
+}
+
+.btn-second:hover{
+    background-color: #a886f6;
+    color: white;
+    border: none;
+}
+
+.hero{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+    .services{
+        
+    }
+}

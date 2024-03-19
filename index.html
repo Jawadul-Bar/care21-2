@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care21</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Forum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="sm:pr-20">
+    <header class="md:container md:mx-auto lg:container lg:mx-auto sm:container sm:mx-auto pb-20">
+        <nav class="font-nav">
+            <div class="navbar bg-white fixed z-10 text-2xl">
+                <div class="navbar-start lg:mx-12 md:ml-1rem">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li>
+                        <a>Services</a>
+                        <ul class="p-2">
+                          <li><a>Doctor</a></li>
+                          <li><a>Therapy</a></li>
+                          <li><a>Exercise</a></li>
+                        </ul>
+                      </li>
+                      <li><a>About Us</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a href="">Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-2xl font-bold"><span class="text-red-500">Care</span>21</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li>
+                      <details>
+                        <summary>Services</summary>
+                        <ul class="p-2">
+                          <li><a>Doctor</a></li>
+                          <li><a>Therapy</a></li>
+                          <li><a>Exercise</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li><a>About Us</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end lg:mx-9 md:mr-9">
+                  <a class="btn button-main">Log In</a>
+                  <a class="btn button-main mx-4">Register Now</a>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <main class="">
+        <div class="hero h-100vh w-100vw md:height-100vh lg:text-center md:ml-6 lg:ml-10 pt-8 pl-4 lg:p-16" style="background-image: url(assets/wall-2.jpg);">
+            <!-- <div class="hero-overlay bg-opacity-45"></div> -->
+            <div class="hero-content text-center">
+              <div class="max-w-md text-left">
+                <h1 class="mb-5 font-headings">United in our efforts, we can create a positive impact.</h1>
+                <p class="mb-5">Together, we can make a meaningful difference in the lives of children with Down syndrome. By embracing inclusion, providing support, and celebrating their unique abilities, we empower them to thrive and contribute positively to the world.</p>
+                <div class="b1 flex lg:flex md:flex gap-3">
+                    <div>
+                        <button class="btn btn-second sm:mb-3">Services</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-second sm:mb-3">Doctor Appointment</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-second">Book Therapy</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-8 pl-4 pr-4 lg:p-16">
+            
+            <div class="flex gap-[220px] lg:gap-[1100px]">
+              <div>
+                <h1 class="border-l-8 border-yellow-400 text-blue-700 text-3xl pl-2 font-bold mb-5 lg:mb-8">Our Services</h1>
+              </div>
+              <div>
+                <img src="assets/bot.jpg" alt="" class="w-20 lg:w-20 fixed z-10 ml-0 lg:ml-10">
+              </div>
+            </div>
+            <div class="flex flex-wrap lg:flex-nowrap items-center ml-4 lg:ml-20 services">
+              <div class="mr-12 text-justify text-lg">
+                We are committed to providing comprehensive and personalized healthcare services to help you achieve optimal wellness and recovery. Our services are designed to cater to a wide range of medical needs, from preventive care to specialized treatments. Here are some of the key services we offer: 
+                <ul class="list-disc ml-10">
+                  
+                  <li>Doctor Consultations</li>
+                  <li>Therapies </li>
+                  <li>Exercises.</li>
+                  <li>Wellness Programs </li>
+                  <li>Chatbot Assistance</li>
+                </ul>
+              </div>
+
+              <div class="carousel flex flex-col lg:flex-row w-[full] ml-8 lg:ml-auto">
+                <div id="slide1" class="carousel-item relative w-[90%] lg:w-[605px]">
+                  <div class="flex flex-wrap lg:flex-nowrap lg:justify-between  bg-sky-700 px-4 pt-[10px] lg:pt-4 lg:pb-4 pb-[10px] lg:py-6 gap-6 items-center justify-center mt-4">
+                    <div class="text-white pt-6 lg:pl-14">
+                      <h3 class="mb-5 font-headings"> Connecting You with Trusted Doctors</h3>
+                      <p class="mb-5 text-justify">
+                        Take the hassle out of booking appointments with our user-friendly website. Now, you can schedule appointments with experienced doctors in just a few clicks. We understand the importance of timely healthcare access, and our platform is designed to streamline your journey to better health.
+                      </p>
+                      <div class="flex flex-1 gap-2">
+                        <button class="btn btn-outline btn-accent border-4 font-bold">Doctors List</button>
+                        <button class="btn btn-outline btn-accent border-4 font-bold">Doctor Appointment</button>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="assets/online-doc.jpg" class="w-[70%] ml-16 lg:ml-6 mt-12 rounded-xl" />
+                    </div>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-[90%] lg:w-[605px] mt-2 lg:mt-0">
+                  <div class="flex flex-wrap lg:flex-nowrap lg:justify-between  bg-red-700 px-4 pt-[10px] lg:pt-4 lg:pb-4 pb-[10px] lg:py-6 gap-6 items-center justify-center mt-4">
+                    <div class="text-white pt-6 lg:pl-14">
+                      <h3 class="mb-5 font-headings"> Tailored Therapies for His/Her Well-Being</h3>
+                      <p class="mb-5 text-justify">  
+                        Our therapy services cater specifically to individuals with Down syndrome, offering tailored programs in physical, occupational, and speech therapies. We focus on improving motor skills, independence in daily activities, communication, and emotional well-being. Our holistic approach aims to support individuals and their families in maximizing their potential and quality of life.
+                      </p>
+                      <div class="flex flex-1 gap-2">
+                        <button class="btn btn-outline btn-accent border-4 font-bold">Therapy List</button>
+                        <button class="btn btn-outline btn-accent border-4 font-bold">Book Therapy</button>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="assets/therapy-O.jpg" class="w-[70%] ml-16 lg:ml-6 mt-12 rounded-xl" />
+                    </div>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-[90%] lg:w-[605px] mt-2 lg:mt-0">
+                  <div class="flex flex-wrap lg:flex-nowrap lg:justify-between  bg-fuchsia-800 px-4 pt-[10px] lg:pt-4 lg:pb-4 pb-[10px] lg:py-6 gap-6 items-center justify-center mt-4">
+                    <div class="text-white pt-6 lg:pl-14">
+                      <h3 class="mb-5 font-headings"> Connecting You with Trusted Doctors</h3>
+                      <p class="mb-5 text-justify">
+                        Take the hassle out of booking appointments with our user-friendly website. Now, you can schedule appointments with experienced doctors in just a few clicks. We understand the importance of timely healthcare access, and our platform is designed to streamline your journey to better health.
+                      </p>
+                      <div class="flex flex-1 gap-2">
+                        <button class="btn btn-outline btn-accent border-4 font-bold">Doctors List</button>
+                        <button class="btn btn-outline btn-accent border-4 font-bold">Doctor Appointment</button>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="assets/exercise-throwing.jpg" class="w-[70%] ml-16 lg:ml-6 mt-12 rounded-xl" />
+                    </div>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-[90%] lg:w-[605px] mt-2 lg:mt-0">
+                  <div class="flex flex-wrap lg:flex-nowrap lg:justify-between  bg-emerald-700 px-4 pt-[10px] lg:pt-4 lg:pb-4 pb-[10px] lg:py-6 gap-6 items-center justify-center mt-4">
+                    <div class="text-white pt-6 lg:pl-14">
+                      <h3 class="mb-5 font-headings"> Connecting You with Trusted Doctors</h3>
+                      <p class="mb-5 text-justify">
+                        Take the hassle out of booking appointments with our user-friendly website. Now, you can schedule appointments with experienced doctors in just a few clicks. We understand the importance of timely healthcare access, and our platform is designed to streamline your journey to better health.
+                      </p>
+                      <div class="flex flex-1 gap-2">
+                        <button class="btn btn-outline btn-accent border-4 font-bold">Doctors List</button>
+                        <button class="btn btn-outline btn-accent border-4 font-bold">Doctor Appointment</button>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="assets/chatbot-carousel.jpg" class="w-[70%] ml-16 lg:ml-6 mt-12 rounded-xl" />
+                    </div>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- locations sector -->
+          <div class="p-6">
+            <div class="flex justify-center">
+              <h1 class="border-l-8 text-yellow-400 border-blue-700 text-3xl pl-2 font-bold mb-5 lg:mb-8">Our Locations</h1>
+            </div>
+
+          <div class="grid grid-cols-2 lg:grid-cols-4 lg:pl-[60px] gap-y-5 lg:gap-5 ml-10 lg:ml-0">
+            
+              <div class="card w-40 lg:lg:w-80 bg-base-100 shadow-xl">
+                <figure><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.176989430126!2d91.8339859!3d22.346944999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad275fd40520b5%3A0x96f0a600ff02368d!2z4Kaa4Kaf4KeN4Kaf4KaX4KeN4Kaw4Ka-4KauIOCmquCnjeCmsOCnh-CmuCDgppXgp43gprLgpr7gpqwsIDE0Ni8xNTEg4Kac4Ka-4Kau4Ka-4KayIOCmluCmvuCmqCDgprDgp4vgpqEsIOCmmuCmn-CnjeCmn-Cml-CnjeCmsOCmvuCmriA0MDAw!5e0!3m2!1sbn!2sbd!4v1710875192102!5m2!1sbn!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Jamalkhan</h2>
+                  <p>Press Club Building, Jamalkhan Mor. <br>Contact: 01316756643</p>
+                  <div class="card-actions justify-end">
+   
+                  </div>
+                </div>
+              </div>
+            
+
+            <div class="card w-40 lg:w-80 bg-base-100 shadow-xl gap-2">
+              <figure><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.176989430126!2d91.8339859!3d22.346944999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad275fd40520b5%3A0x96f0a600ff02368d!2z4Kaa4Kaf4KeN4Kaf4KaX4KeN4Kaw4Ka-4KauIOCmquCnjeCmsOCnh-CmuCDgppXgp43gprLgpr7gpqwsIDE0Ni8xNTEg4Kac4Ka-4Kau4Ka-4KayIOCmluCmvuCmqCDgprDgp4vgpqEsIOCmmuCmn-CnjeCmn-Cml-CnjeCmsOCmvuCmriA0MDAw!5e0!3m2!1sbn!2sbd!4v1710875192102!5m2!1sbn!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></figure>
+              <div class="card-body">
+                <h2 class="card-title">Jamalkhan</h2>
+                <p>Press Club Building, Jamalkhan Mor.<br> Contact: 01316756643</p>
+                <div class="card-actions justify-end">
+ 
+                </div>
+              </div>
+            </div>
+
+            <div class="card w-40 lg:w-80 bg-base-100 shadow-xl">
+              <figure><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.176989430126!2d91.8339859!3d22.346944999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad275fd40520b5%3A0x96f0a600ff02368d!2z4Kaa4Kaf4KeN4Kaf4KaX4KeN4Kaw4Ka-4KauIOCmquCnjeCmsOCnh-CmuCDgppXgp43gprLgpr7gpqwsIDE0Ni8xNTEg4Kac4Ka-4Kau4Ka-4KayIOCmluCmvuCmqCDgprDgp4vgpqEsIOCmmuCmn-CnjeCmn-Cml-CnjeCmsOCmvuCmriA0MDAw!5e0!3m2!1sbn!2sbd!4v1710875192102!5m2!1sbn!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></figure>
+              <div class="card-body">
+                <h2 class="card-title">Jamalkhan</h2>
+                <p>Press Club Building, Jamalkhan Mor. <br>Contact: 01316756643</p>
+                <div class="card-actions justify-end">
+ 
+                </div>
+              </div>
+            </div>
+
+            <div class="card w-40 lg:w-80 bg-base-100 shadow-xl">
+              <figure><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.176989430126!2d91.8339859!3d22.346944999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad275fd40520b5%3A0x96f0a600ff02368d!2z4Kaa4Kaf4KeN4Kaf4KaX4KeN4Kaw4Ka-4KauIOCmquCnjeCmsOCnh-CmuCDgppXgp43gprLgpr7gpqwsIDE0Ni8xNTEg4Kac4Ka-4Kau4Ka-4KayIOCmluCmvuCmqCDgprDgp4vgpqEsIOCmmuCmn-CnjeCmn-Cml-CnjeCmsOCmvuCmriA0MDAw!5e0!3m2!1sbn!2sbd!4v1710875192102!5m2!1sbn!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></figure>
+              <div class="card-body">
+                <h2 class="card-title">Jamalkhan</h2>
+                <p>Press Club Building, Jamalkhan Mor. <br>Contact: 01316756643</p>
+                <div class="card-actions justify-end">
+ 
+                </div>
+              </div>
+            </div>
+
+            <div class="card w-40 lg:w-80 bg-base-100 shadow-xl">
+              <figure><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.176989430126!2d91.8339859!3d22.346944999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad275fd40520b5%3A0x96f0a600ff02368d!2z4Kaa4Kaf4KeN4Kaf4KaX4KeN4Kaw4Ka-4KauIOCmquCnjeCmsOCnh-CmuCDgppXgp43gprLgpr7gpqwsIDE0Ni8xNTEg4Kac4Ka-4Kau4Ka-4KayIOCmluCmvuCmqCDgprDgp4vgpqEsIOCmmuCmn-CnjeCmn-Cml-CnjeCmsOCmvuCmriA0MDAw!5e0!3m2!1sbn!2sbd!4v1710875192102!5m2!1sbn!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></figure>
+              <div class="card-body">
+                <h2 class="card-title">Jamalkhan</h2>
+                <p>Press Club Building, Jamalkhan Mor. <br>Contact: 01316756643</p>
+                <div class="card-actions justify-end">
+ 
+                </div>
+              </div>
+            </div>
+
+            <div class="card w-40 lg:w-80 bg-base-100 shadow-xl">
+              <figure><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.176989430126!2d91.8339859!3d22.346944999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad275fd40520b5%3A0x96f0a600ff02368d!2z4Kaa4Kaf4KeN4Kaf4KaX4KeN4Kaw4Ka-4KauIOCmquCnjeCmsOCnh-CmuCDgppXgp43gprLgpr7gpqwsIDE0Ni8xNTEg4Kac4Ka-4Kau4Ka-4KayIOCmluCmvuCmqCDgprDgp4vgpqEsIOCmmuCmn-CnjeCmn-Cml-CnjeCmsOCmvuCmriA0MDAw!5e0!3m2!1sbn!2sbd!4v1710875192102!5m2!1sbn!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></figure>
+              <div class="card-body">
+                <h2 class="card-title">Jamalkhan</h2>
+                <p>Press Club Building, Jamalkhan Mor. <br>Contact: 01316756643</p>
+                <div class="card-actions justify-end">
+ 
+                </div>
+              </div>
+            </div>
+
+            <div class="card w-40 lg:w-80 bg-base-100 shadow-xl">
+              <figure><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.176989430126!2d91.8339859!3d22.346944999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad275fd40520b5%3A0x96f0a600ff02368d!2z4Kaa4Kaf4KeN4Kaf4KaX4KeN4Kaw4Ka-4KauIOCmquCnjeCmsOCnh-CmuCDgppXgp43gprLgpr7gpqwsIDE0Ni8xNTEg4Kac4Ka-4Kau4Ka-4KayIOCmluCmvuCmqCDgprDgp4vgpqEsIOCmmuCmn-CnjeCmn-Cml-CnjeCmsOCmvuCmriA0MDAw!5e0!3m2!1sbn!2sbd!4v1710875192102!5m2!1sbn!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></figure>
+              <div class="card-body">
+                <h2 class="card-title">Jamalkhan</h2>
+                <p>Press Club Building, Jamalkhan Mor.<br> Contact: 01316756643</p>
+                <div class="card-actions justify-end">
+ 
+                </div>
+              </div>
+            </div>
+
+            <div class="card w-40 lg:w-80 bg-base-100 shadow-xl">
+              <figure><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.176989430126!2d91.8339859!3d22.346944999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad275fd40520b5%3A0x96f0a600ff02368d!2z4Kaa4Kaf4KeN4Kaf4KaX4KeN4Kaw4Ka-4KauIOCmquCnjeCmsOCnh-CmuCDgppXgp43gprLgpr7gpqwsIDE0Ni8xNTEg4Kac4Ka-4Kau4Ka-4KayIOCmluCmvuCmqCDgprDgp4vgpqEsIOCmmuCmn-CnjeCmn-Cml-CnjeCmsOCmvuCmriA0MDAw!5e0!3m2!1sbn!2sbd!4v1710875192102!5m2!1sbn!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></figure>
+              <div class="card-body">
+                <h2 class="card-title">Jamalkhan</h2>
+                <p>Press Club Building, Jamalkhan Mor. <br>
+                  Contact: 01316756643</p>
+                <div class="card-actions justify-end">
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
