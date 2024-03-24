@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Forum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+
+        <!-- Log In Modal-->
+    <input type="checkbox" id="my_login" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text text-center">
+      <div class="bg-blue-100">
+        <div class="container mx-auto max-w-md py-6">
+            <h2 class="text-2xl font-bold text-center mb-6">Login Form</h2>
+            <form action="login.php" method="POST" class="bg-yellow-100 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <div class="mb-4">
+                    <label for="username" class="block font-bold mb-2 text-lg">Username:</label>
+                    <input type="text" id="username" name="username" required
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block font-bold mb-2 text-lg">Password:</label>
+                    <input type="password" id="password" name="password" required
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="submit"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
+                </div>
+            </form>
+        </div>
+      </div>
+        <div class="modal-action">
+        <label for="my_login" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <input type="checkbox" id="contact" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text text-center">
+        <h3 class="font-bold text-lg">Contact</h3>
+        <p class="py-4"><b>Call Us: <br></b>01880-919005 or 01316-756636</p>
+        <p class="py-4"><b>Mail Us: <br></b>teamrecursionbd@gmail.com</p>
+        <div class="modal-action">
+        <label for="contact" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+        <!-- join modal -->
+        <input type="checkbox" id="join" class="modal-toggle" />
+        <div class="modal" role="dialog">
+        <div class="modal-box  font-text">
+            <h3 class="font-bold text-lg">Sorry!</h3>
+            <p class="py-4">Exercise Program is a privilege for our premium members.!</p>
+            <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+            <div class="modal-action">
+            <label for="join" class="btn">Close!</label>
+            </div>
+        </div>
+        </div>
+</head>
+<body>
+    <header class="md:container md:mx-auto lg:container lg:mx-auto sm:container sm:mx-auto xs:container xs:mx-auto xl:container xl:mx-auto pb-16">
+        <nav class="font-nav">
+            <div class="navbar bg-white fixed z-10 text-2xl">
+                <div class="navbar-start lg:mx-12 md:ml-1rem">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-1 shadow bg-base-100 rounded-box w-40">
+                      <li><a href="index.html">Home</a></li>
+                      <li>
+                        <a>Services</a>
+                        <ul class="p-2">
+                          <li><a href="doctors.html">Doctor</a></li>
+                           <li><a href="therapy.html">Therapy</a></li>
+                          <li><a href="exercise.html">Exercise</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a>Blog</a></li>
+                      <li><label for="contact">Contact</label></li>
+                    </ul>
+                  </div>
+                  <a href="index.html">
+                    <img src="assets/Care21-logo2.png" alt="Care21 Logo" class="w-10 h-auto cursor-pointer">
+                  </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                      <details>
+                        <summary>Services</summary>
+                        <ul class="p-2">
+                          <li><a href="doctors.html">Doctor</a></li>
+                          <li><a href="therapy.html">Therapy</a></li>
+                          <li><a href="exercise.html">Exercise</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a>Blog</a></li>
+                    <li><label for="contact">Contact</label></li>
+                  </ul>
+                </div>
+                <div class="navbar-end lg:mr-9 md:mr-9 mr-4">
+                  <h4 class="text-blue-500 hover:text-yellow-500 text-xl">
+                    <label for="my_login" class="btn button-one">Log In</label>
+                  </h4>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="md:ml-6 lg:mx-6 p-10 pt-4 text-center">
+            <div class="bg-gray-500">
+              <div class="relative h-screen rounded-3xl" style="height: 500px;">
+                <div class="absolute inset-0 z-0 bg-cover bg-center"
+                  style="background-image: url('assets/exer-bg.jpg');"></div>
+                <div class="absolute inset-0 bg-black opacity-70"></div>
+                <div class="absolute inset-0 z-0 flex flex-col justify-center items-center p-1 text-white">
+                  <h1 class="text-yellow-400 text-3xl pl-2 font-bold font-headings">Welcome to Our Exercise Program</h1>
+                  <p class="text-center mt-6 lg:text-[16px] p-2 lg:px-[150px]">We believe in promoting physical well-being and an active lifestyle for individuals with Down Syndrome. Our Exercise Program is designed to provide fun and effective exercises that help improve strength, mobility, coordination, and overall health.</p>
+                  <div class="mt-3 flex flex-col-reverse md:flex-row gap-6">
+                    <div>
+                      <label for="join" class="btn btn-third">Join Program</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-14 text-left">
+                <div class="flex justify-center">
+                    <h1 class="text-blue-700 text-3xl pl-2 font-bold font-headings mb-6 border-l-8 border-r-8 border-yellow-400 px-2">
+                        Our Exercise Categories
+                    </h1>
+                </div>
+    
+                <p>
+                    <ol>
+                        <li class="pb-4 text-lg">
+                            <b>Strength Training: </b>Explore exercises focused on building muscle strength and endurance to support daily activities and independence.
+                        </li>
+                        <li class="pb-4 text-lg">
+                            <b>Flexibility Exercises: </b> Learn stretches and movements to improve flexibility, joint mobility, and range of motion.
+                        </li>
+                        <li class="pb-4 text-lg">
+                            <b>Balance and Coordination:</b> Discover exercises that enhance balance, coordination, and stability for improved motor skills.
+                        </li>
+                        <li class="pb-4 text-lg">
+                            <b>Cardiovascular Workouts:</b> Engage in cardio exercises such as walking, jogging, or dancing to promote heart health and endurance.
+                        </li>
+                        <li class="pb-4 text-lg">
+                            <b>Core Strengthening:</b> Target the core muscles with exercises that improve posture, stability, and abdominal strength.
+                        </li>
+
+                        <li class="pb-4 text-lg">
+                            <b>Gait Training:</b> Learn techniques to improve walking patterns and gait stability, promoting better mobility and independence.
+                        </li>
+
+                        <li class="pb-4 text-lg">
+                            <b>Fine Motor Exercises:</b> Explore activities to enhance fine motor skills such as dexterity, hand-eye coordination, and finger strength.
+                        </li>
+                        <li class="pb-4 text-lg">
+                            <b>Mindfulness and Relaxation:</b> Incorporate mindfulness practices and relaxation techniques to reduce stress, improve focus, and promote mental well-being.
+                        </li>
+                        <li class="pb-4 text-lg">
+                            <b>Therapeutic Yoga:</b> Engage in yoga sessions adapted for individuals with Down Syndrome, focusing on gentle movements, breathing exercises, and relaxation.
+                        </li>
+                        <li class="text-lg">
+                            <b>Strength Bands Training:</b> Utilize resistance bands for targeted muscle strengthening exercises, promoting muscle tone and endurance.
+                        </li>
+
+                    </ol>
+                </p>
+            </div>
+
+            <div class="mt-14 text-left">
+                <div class="flex justify-center">
+                    <h1 class="text-yellow-500 text-3xl pl-2 font-bold font-headings mb-6 border-l-8 border-r-8 border-blue-700 px-2">
+                        Benefits of Exercise for Down Syndrome
+                    </h1>
+                </div>
+
+                <div>
+                    <p class="text-left text-lg leading-10">
+                            → Enhances overall physical fitness and health <br>
+                        → Improves muscle tone and strength.<br>
+                        → Supports better posture and body alignment.<br>
+                        → Boosts cardiovascular health and endurance.<br>
+                        → Enhances coordination and motor skills.<br>
+                        → Promotes a positive mood and mental well-being.<br>
+                        → Increases energy levels and stamina.<br>
+                        → Supports weight management and healthy body composition.<br>
+                        → Reduces the risk of chronic diseases such as diabetes and heart disease.<br>
+                        → Improves bone density and reduces the risk of osteoporosis.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-14 text-left">
+                <div class="flex justify-center">
+                    <h1 class="text-yellow-500 text-3xl pl-2 font-bold font-headings mb-6 border-l-8 border-r-8 border-blue-700 px-2">
+                        Live Exercises and Resources
+                    </h1>
+                    
+                </div>
+                <div class="flex flex-col lg:flex-row flex-1 gap-8">
+                    <div>
+                        <p class="text-lg text-justify">
+                            Our Live Exercises feature offers a comprehensive platform designed to engage individuals with Down Syndrome in fitness activities while tracking their movements, accuracy, and progress. Our platform includes a diverse video library of exercises tailored to different fitness levels and areas of focus such as strength, flexibility, balance, and coordination. Participants can join live workout sessions led by certified instructors, allowing them to follow along in real-time and receive immediate feedback. We employ advanced movement tracking technology to monitor participants' movements during exercises, assessing accuracy and technique to ensure safe and effective workouts. Additionally, our platform provides tools for participants to track their progress over time, including metrics such as exercise duration, repetitions, and improvements in performance. Our goal is to create a motivating and supportive environment where individuals can actively participate in their fitness journey, achieve their goals, and experience the benefits of regular physical activity.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="assets/workout.jpg" alt="" class="rounded-2xl">
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-normal text-3xl font-extrabold mt-14">
+                <span class="text-blue-700">Stay Active,</span> <span class="text-yellow-500">Stay Healthy.</span>
+            </h1>
+        </div>
+    </main>
+
+    <footer class="footer footer-center bg-blue-500 text-yellow-300 mt-6 h-100vh w-100vw md:height-100vh pt-8 pl-4 md:ml-6 lg:ml-0 p-6 lg:p-10">
+        <aside>
+          <img src="assets/Care21-logo2.png" alt="" class="w-20">
+          <p class="font-bold">
+            CARE 21 <br>Providing reliable tech since 2024
+          </p> 
+          <p>Copyright © 2024 - All right reserved by Xenon Tech</p>
+        </aside>
+      </footer>
+</body>
+</html>

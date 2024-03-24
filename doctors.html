@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Forum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+
+        <!-- Log In Modal-->
+    <input type="checkbox" id="my_login" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text text-center">
+      <div class="bg-blue-100">
+        <div class="container mx-auto max-w-md py-6">
+            <h2 class="text-2xl font-bold text-center mb-6">Login Form</h2>
+            <form action="login.php" method="POST" class="bg-yellow-100 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <div class="mb-4">
+                    <label for="username" class="block font-bold mb-2 text-lg">Username:</label>
+                    <input type="text" id="username" name="username" required
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block font-bold mb-2 text-lg">Password:</label>
+                    <input type="password" id="password" name="password" required
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="submit"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
+                </div>
+            </form>
+        </div>
+      </div>
+        <div class="modal-action">
+        <label for="my_login" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <input type="checkbox" id="contact" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text text-center">
+        <h3 class="font-bold text-lg">Contact</h3>
+        <p class="py-4"><b>Call Us: <br></b>01880-919005 or 01316-756636</p>
+        <p class="py-4"><b>Mail Us: <br></b>teamrecursionbd@gmail.com</p>
+        <div class="modal-action">
+        <label for="contact" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- modal-1 -->
+    <input type="checkbox" id="my_modal_1" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Appointment scheduling is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal_1" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal-2 -->
+    <input type="checkbox" id="my_modal_2" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Appointment scheduling is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal_2" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal-3 -->
+    <input type="checkbox" id="my_modal_3" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Appointment scheduling is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal_3" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal-4 -->
+    <input type="checkbox" id="my_modal_4" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Appointment scheduling is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal_4" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal-5 -->
+    <input type="checkbox" id="my_modal_5" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Appointment scheduling is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal_5" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal-6 -->
+    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Appointment scheduling is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal_6" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal-7 -->
+    <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Appointment scheduling is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal_7" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal-8 -->
+    <input type="checkbox" id="my_modal_8" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Appointment scheduling is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal_8" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal-9 -->
+    <input type="checkbox" id="my_modal_9" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Appointment scheduling is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal_9" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal-10 -->
+    <input type="checkbox" id="my_modal_10" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Appointment scheduling is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal_10" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal-11 -->
+    <input type="checkbox" id="my_modal_11" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Appointment scheduling is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal_11" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal-12 -->
+    <input type="checkbox" id="my_modal_12" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Appointment scheduling is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal_12" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal -->
+    <input type="checkbox" id="my_modal" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Appointment scheduling is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+</head>
+<body>
+  <header class="md:container md:mx-auto lg:container lg:mx-auto sm:container sm:mx-auto xs:container xs:mx-auto xl:container xl:mx-auto pb-16">
+        <nav class="font-nav">
+            <div class="navbar bg-white fixed z-10 text-2xl">
+                <div class="navbar-start lg:mx-12 md:ml-1rem">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-1 shadow bg-base-100 rounded-box w-40">
+                      <li><a href="index.html">Home</a></li>
+                      <li>
+                        <a>Services</a>
+                        <ul class="p-2">
+                          <li><a href="doctors.html">Doctor</a></li>
+                           <li><a href="therapy.html">Therapy</a></li>
+                          <li><a href="exercise.html">Exercise</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a>Blog</a></li>
+                      <li><label for="contact">Contact</label></li>
+                    </ul>
+                  </div>
+                  <a href="index.html">
+                    <img src="assets/Care21-logo2.png" alt="Care21 Logo" class="w-10 h-auto cursor-pointer">
+                  </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                      <details>
+                        <summary>Services</summary>
+                        <ul class="p-2">
+                          <li><a href="doctors.html">Doctor</a></li>
+                          <li><a href="therapy.html">Therapy</a></li>
+                          <li><a href="exercise.html">Exercise</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a>Blog</a></li>
+                    <li><label for="contact">Contact</label></li>
+                  </ul>
+                </div>
+                <div class="navbar-end lg:mr-9 md:mr-9 mr-4">
+                  <h4 class="text-blue-500 hover:text-yellow-500 text-xl">
+                    <label for="my_login" class="btn button-one">Log In</label>
+                  </h4>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1 class="mt-6 text-center font-headings text-blue-700 text-2xl">
+                Our Team of Doctors
+            </h1>
+            <div class="font-normal">
+                <div  class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 justify-center items-center gap-10 p-6 lg:p-16">
+                    <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-2 pt-6">
+                          <img src="assets/doc-1.jpeg" alt="Doctor" class="rounded-xl w-[50%]" />
+                        </figure>
+                        <div class="card-body items-center text-left">
+                          <h2 class="card-title text-xl">Dr John Luther</h2><br>
+                          
+                          <p class="text-left">
+                            <b class="text-lg">MBBS</b>
+                            <br>
+                            <br>
+                            <b>Specialties</b>
+                            <br>
+                            Knee Orthopedic Surgery <br> Orthopedic Sports Medicine
+                           <br> Orthopedic Surgery
+                           <br>
+                           <br>
+                            <b>Schedule</b><br>
+                            10AM to 2PM
+                        </p>
+                           <br>
+
+                          <div class="card-actions">
+                            <!-- The button to open modal -->
+                            <label for="my_modal_1" class="btn btn-second">Appointment</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-2 pt-6">
+                          <img src="assets/doc-7.jpg" alt="Doctor" class="rounded-xl w-[55%]" />
+                        </figure>
+                        <div class="card-body items-center text-left">
+                          <h2 class="card-title text-xl">Dr Md Haris </h2><br>
+                          
+                          <p class="text-left">
+                            <b class="text-lg">MBBS</b>
+                            <br>
+                            <br>
+                            <b>Specialties</b>
+                            <br>
+                            Knee Orthopedic Surgery <br> Orthopedic Sports Medicine <br>
+                            Orthopedic Medicine
+                           <br>
+                           <br>
+                            <b>Schedule</b><br>
+                            4PM to 8PM
+                        </p>
+                           <br>
+
+                          <div class="card-actions">
+                            <label for="my_modal_4" class="btn btn-second">Appointment</label>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-2 pt-6">
+                          <img src="assets/doc-3.jpg" alt="Doctor" class="rounded-xl w-[55%]" />
+                        </figure>
+                        <div class="card-body items-center text-left">
+                          <h2 class="card-title text-xl">Dr Marcus Jones</h2><br>
+                          
+                          <p class="text-left">
+                            <b class="text-lg">MBBS</b>
+                            <br>
+                            <br>
+                            <b>Specialties</b>
+                            <br>
+                            Genetic Counselor <br>
+                            Pediatric Genetics & Genomics <br>
+                            Clinical Genetics
+                           <br>
+                           <br>
+                            <b>Schedule</b><br>
+                            4PM to 8PM
+                        </p>
+                           <br>
+
+                          <div class="card-actions">
+                            <label for="my_modal_3" class="btn btn-second">Appointment</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-2 pt-6">
+                          <img src="assets/doc-2.jpg" alt="Doctor" class="rounded-xl w-[50%]" />
+                        </figure>
+                        <div class="card-body items-center text-left">
+                          <h2 class="card-title text-xl">Dr Elsa Jones</h2><br>
+                          
+                          <p class="text-left">
+                            <b class="text-lg">MBBS</b>
+                            <br>
+                            <br>
+                            <b>Specialties</b><br>
+                            Genetic Counselor <br>
+                            Pediatric Genetics & Genomics <br>
+                            Clinical Genetics
+                           <br>
+                           <br>
+                            <b>Schedule</b><br>
+                            10AM to 2PM
+                        </p>
+                           <br>
+
+                          <div class="card-actions">
+                            <label for="my_modal_2" class="btn btn-second">Appointment</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-2 pt-6">
+                          <img src="assets/doc-8.jpg" alt="Doctor" class="rounded-xl w-[48%]" />
+                        </figure>
+                        <div class="card-body items-center text-left">
+                          <h2 class="card-title text-xl">Dr Ranjan Mitra</h2><br>
+                          
+                          <p class="text-left">
+                            <b class="text-lg">DNB Paediatrics, MBBS</b>
+                            <br>
+                            <br>
+                            <b>Specialties</b>
+                            <br>
+                            Developmental-Behavioral Pediatrics
+                           <br>
+                           <br>
+                            <b>Schedule</b><br>
+                            10AM to 2PM
+                        </p>
+                           <br>
+
+                          <div class="card-actions">
+                            <label for="my_modal_5" class="btn btn-second">Appointment</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-2 pt-6">
+                          <img src="assets/doc-5.jpg" alt="Doctor" class="rounded-xl w-[50%]" />
+                        </figure>
+                        <div class="card-body items-center text-left">
+                          <h2 class="card-title text-xl">Dr Jemimah Rodrigues</h2><br>
+                          
+                          <p class="text-left">
+                            <b class="text-lg">MBBS</b>
+                            <br>
+                            <br>
+                            <b>Specialties</b>
+                            <br>
+                            Developmental-Behavioral Pediatrics
+                           <br>
+                           <br>
+                            <b>Schedule</b><br>
+                            10AM to 2PM
+                        </p>
+                           <br>
+
+                          <div class="card-actions">
+                            <label for="my_modal_7" class="btn btn-second">Appointment</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-2 pt-6">
+                          <img src="assets/doc-6.jpg" alt="Doctor" class="rounded-xl w-[50%]" />
+                        </figure>
+                        <div class="card-body items-center text-left">
+                          <h2 class="card-title text-xl">Dr James Miller</h2><br>
+                          
+                          <p class="text-left">
+                            <b class="text-lg">MBBS, DCH</b>
+                            <br>
+                            <br>
+                            <b>Specialties</b>
+                            <br>
+                            Neurodevelopmental Disorders
+                           <br>
+                           <br>
+                            <b>Schedule</b><br>
+                            10AM to 2PM
+                        </p>
+                           <br>
+
+                          <div class="card-actions">
+                            <label for="my_modal_6" class="btn btn-second">Appointment</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-2 pt-6">
+                          <img src="assets/doc-9.jpg" alt="Doctor" class="rounded-xl w-[52%]" />
+                        </figure>
+                        <div class="card-body items-center text-left">
+                            <h2 class="card-title text-xl">Dr Sana Mir</h2><br>
+                            
+                            <p class="text-left">
+                              <b class="text-lg">MBBS</b>
+                              <br>
+                              <br>
+                              <b>Specialties</b>
+                              <br>
+                              Neurodevelopmental Disorders
+                             <br>
+                             <br>
+                              <b>Schedule</b><br>
+                              4PM to 8PM
+                          </p>
+                             <br>
+  
+                            <div class="card-actions">
+                                <label for="my_modal_8" class="btn btn-second">Appointment</label>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-2 pt-6">
+                          <img src="assets/doc-10.jpg" alt="Doctor" class="rounded-xl w-[50%]" />
+                        </figure>
+                        <div class="card-body items-center text-left">
+                          <h2 class="card-title text-xl">Dr Sheikh Rafique</h2><br>
+                          
+                          <p class="text-left">
+                            <b class="text-lg">MBBS</b>
+                            <br>
+                            <br>
+                            <b>Specialties</b>
+                            <br>
+                            Pulmonology
+                           <br>
+                           <br>
+                            <b>Schedule</b><br>
+                            10AM to 2PM
+                        </p>
+                           <br>
+
+                          <div class="card-actions">
+                            <label for="my_modal_9" class="btn btn-second">Appointment</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-2 pt-6">
+                          <img src="assets/doc-11.jpg" alt="Doctor" class="rounded-xl w-[50%]" />
+                        </figure>
+                        <div class="card-body items-center text-left">
+                          <h2 class="card-title text-xl">Dr Fairuz Antara</h2><br>
+                          
+                          <p class="text-left">
+                            <b class="text-lg">MBBS</b>
+                            <br>
+                            <br>
+                            <b>Specialties</b>
+                            <br>
+                            Ophthalmology
+                           <br>
+                           <br>
+                            <b>Schedule</b><br>
+                            10AM to 2PM
+                        </p>
+                           <br>
+
+                          <div class="card-actions">
+                            <label for="my_modal_10" class="btn btn-second">Appointment</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-2 pt-6">
+                          <img src="assets/doc-12.jpg" alt="Doctor" class="rounded-xl w-[60%]" />
+                        </figure>
+                        <div class="card-body items-center text-left">
+                          <h2 class="card-title text-xl">Dr Abrar Ahmed</h2><br>
+                          
+                          <p class="text-left">
+                            <b class="text-lg">MBBS</b>
+                            <br>
+                            <br>
+                            <b>Specialties</b>
+                            <br>
+                            Genetics & Developmental Disorders
+                           <br>
+                           <br>
+                            <b>Schedule</b><br>
+                            4PM to 8PM
+                        </p>
+                           <br>
+
+                          <div class="card-actions">
+                            <label for="my_modal_11" class="btn btn-second">Appointment</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card w-full bg-base-100 shadow-xl">
+                        <figure class="px-2 pt-6">
+                          <img src="assets/doc-13.jpg" alt="Doctor" class="rounded-xl w-[55%]" />
+                        </figure>
+                        <div class="card-body items-center text-left">
+                          <h2 class="card-title text-xl">Dr Kamrul Islam</h2><br>
+                          
+                          <p class="text-left">
+                            <b class="text-lg">MBBS, PR Training</b>
+                            <br>
+                            <br>
+                            <b>Specialties</b>
+                            <br>
+                            Endocrinology & Hormonal Disorders
+                           <br>
+                           <br>
+                            <b>Schedule</b><br>
+                            4PM to 8PM
+                        </p>
+                           <br>
+
+                          <div class="card-actions">
+                            <label for="my_modal_12" class="btn btn-second">Appointment</label>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+           </div>
+           <div class=" text-center font-normal">
+            <label for="my_modal" class="btn button-one">Schedule an Appointment</label>
+           </div>
+        </div>
+    </main>
+
+    <footer class="footer footer-center bg-blue-500 text-yellow-300 mt-6 h-100vh w-100vw md:height-100vh pt-8 pl-4 md:ml-6 lg:ml-0 p-6 lg:p-10">
+        <aside>
+          <img src="assets/Care21-logo2.png" alt="" class="w-20">
+          <p class="font-bold">
+            CARE 21 <br>Providing reliable tech since 2024
+          </p> 
+          <p>Copyright © 2024 - All right reserved by Xenon Tech</p>
+        </aside>
+      </footer>
+</body>
+</html>

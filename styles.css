@@ -20,23 +20,35 @@
     font-weight: 600;
 }
 
-.button-main{
-    background-color: #057894;
-    color: white;
+.button-one{
+    background-color: blue;
+    color: yellow;
 }
 
-.button-main:hover{
-    background-color: #24c7f0;
+.button-one:hover{
+    background-color: rgb(112, 112, 249);
 }
 
 .btn-second{
-    background-color: #735DA5;
-    color: white;
+    background-color: rgb(251, 251, 7);
+    color: blue;
     border: none;
 }
 
 .btn-second:hover{
-    background-color: #a886f6;
+    background-color: rgb(224, 224, 9);
+    color: blue;
+    border: none;
+}
+
+.btn-third{
+    background-color: rgb(250, 44, 44);
+    color: black;
+    border: none;
+}
+
+.btn-third:hover{
+    background-color: rgb(211, 4, 4);
     color: white;
     border: none;
 }
@@ -48,6 +60,7 @@
     width: 100%;
     background-repeat: no-repeat;
 }
+
 
 @media screen and (max-width: 600px) {
     .services{

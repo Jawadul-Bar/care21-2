@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Forum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+
+        <!-- Log In Modal-->
+        <input type="checkbox" id="my_login" class="modal-toggle" />
+        <div class="modal" role="dialog">
+        <div class="modal-box  font-text text-center">
+          <div class="bg-blue-100">
+            <div class="container mx-auto max-w-md py-6">
+                <h2 class="text-2xl font-bold text-center mb-6">Login Form</h2>
+                <form action="login.php" method="POST" class="bg-yellow-100 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    <div class="mb-4">
+                        <label for="username" class="block font-bold mb-2 text-lg">Username:</label>
+                        <input type="text" id="username" name="username" required
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-6">
+                        <label for="password" class="block font-bold mb-2 text-lg">Password:</label>
+                        <input type="password" id="password" name="password" required
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button type="submit"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+            <div class="modal-action">
+            <label for="my_login" class="btn">Close!</label>
+            </div>
+        </div>
+        </div>
+    
+        <!-- Contact Modal -->
+        <input type="checkbox" id="contact" class="modal-toggle" />
+        <div class="modal" role="dialog">
+        <div class="modal-box  font-text text-center">
+            <h3 class="font-bold text-lg">Contact</h3>
+            <p class="py-4"><b>Call Us: <br></b>01880-919005 or 01316-756636</p>
+            <p class="py-4"><b>Mail Us: <br></b>teamrecursionbd@gmail.com</p>
+            <div class="modal-action">
+            <label for="contact" class="btn">Close!</label>
+            </div>
+        </div>
+        </div>
+</head>
+<body>
+    <header class="md:container md:mx-auto lg:container lg:mx-auto sm:container sm:mx-auto xs:container xs:mx-auto xl:container xl:mx-auto pb-16">
+        <nav class="font-nav">
+            <div class="navbar bg-white fixed z-10 text-2xl">
+                <div class="navbar-start lg:mx-12 md:ml-1rem">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-1 shadow bg-base-100 rounded-box w-40">
+                      <li><a href="index.html">Home</a></li>
+                      <li>
+                        <a>Services</a>
+                        <ul class="p-2">
+                          <li><a href="doctors.html">Doctor</a></li>
+                           <li><a href="therapy.html">Therapy</a></li>
+                          <li><a href="exercise.html">Exercise</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a>Blog</a></li>
+                      <li><label for="contact">Contact</label></li>
+                    </ul>
+                  </div>
+                  <a href="index.html">
+                    <img src="assets/Care21-logo2.png" alt="Care21 Logo" class="w-10 h-auto cursor-pointer">
+                  </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                      <details>
+                        <summary>Services</summary>
+                        <ul class="p-2">
+                          <li><a href="doctors.html">Doctor</a></li>
+                          <li><a href="therapy.html">Therapy</a></li>
+                          <li><a href="exercise.html">Exercise</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a>Blog</a></li>
+                    <li><label for="contact">Contact</label></li>
+                  </ul>
+                </div>
+                <div class="navbar-end lg:mr-9 md:mr-9 mr-4">
+                  <h4 class="text-blue-500 hover:text-yellow-500 text-xl">
+                    <label for="my_login" class="btn button-one">Log In</label>
+                  </h4>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="md:mx-6 lg:mx-16 px-4 lg:p-16 mt-1">
+            <div class="flex justify-center">
+              <h1 class="border-t-8 border-b-8 text-blue-700 border-yellow-300 text-3xl pl-2 font-bold mb-5 lg:mb-8">
+                FAQs
+              </h1>
+            </div>
+
+            <div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3"/> 
+                <div class="collapse-title text-xl font-medium">
+                  What is Down syndrome?
+                </div>
+                <div class="collapse-content"> 
+                  <p>
+                    Down syndrome is a genetic condition caused by the presence of an extra copy of chromosome 21 in a person's cells.
+                  </p>
+                </div>
+              </div>
+
+            <div class="collapse collapse-plus bg-base-200 mb-2">
+              <input type="radio" name="my-accordion-3"/> 
+              <div class="collapse-title text-xl font-medium">
+                What causes Down syndrome?
+              </div>
+              <div class="collapse-content"> 
+                <p>
+                  Down syndrome is caused by an error in cell division, resulting in an extra copy of chromosome 21. This can occur during the formation of the egg or sperm or during early fetal development.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200 mb-2">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                What are the common physical characteristics of individuals with Down syndrome?
+              </div>
+              <div class="collapse-content"> 
+                <p>Common physical characteristics include almond-shaped eyes, a flat facial profile, small ears, a protruding tongue, and a single deep crease across the palm.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200 mb-2">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                How is Down syndrome diagnosed?
+              </div>
+              <div class="collapse-content"> 
+                <p>Down syndrome can be diagnosed during pregnancy through prenatal screening tests such as non-invasive prenatal testing (NIPT) or diagnostic tests like amniocentesis or chorionic villus sampling (CVS).</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200 mb-2">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                What are the different types of Down syndrome?
+              </div>
+              <div class="collapse-content"> 
+                <p>The three main types are trisomy 21 (most common), translocation Down syndrome, and mosaic Down syndrome.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200 mb-2">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                What are the available therapies and interventions for individuals with Down syndrome?
+              </div>
+              <div class="collapse-content"> 
+                <p>Therapies include speech and language therapy, occupational therapy, physical therapy, behavioral therapy, and educational interventions.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200 mb-2">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                How common is Down syndrome?
+              </div>
+              <div class="collapse-content"> 
+                <p>Down syndrome occurs in about 1 in every 700 births worldwide, making it the most common chromosomal condition.</p>
+              </div>
+            </div>
+
+            <div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    Is Down syndrome hereditary?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Most cases of Down syndrome are not inherited but occur due to a random error in cell division during the formation of reproductive cells or early embryo development. However, there is a small percentage of cases where Down syndrome can be inherited through genetic factors.</p>
+                </div>
+              </div><div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    What are the health challenges associated with Down syndrome?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Common health challenges include heart defects, gastrointestinal issues, respiratory problems, thyroid disorders, hearing loss, and vision problems. Regular medical screenings and early interventions help manage these challenges.</p>
+                </div>
+              </div><div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    What therapies are beneficial for individuals with Down syndrome?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Therapies such as speech therapy, occupational therapy, physical therapy, and behavioral therapy are beneficial for improving communication, motor skills, independence, and overall quality of life.</p>
+                </div>
+              </div><div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    What is the life expectancy of individuals with Down syndrome?
+                </div>
+                <div class="collapse-content"> 
+                  <p>The life expectancy of individuals with Down syndrome has significantly increased over the years and now approaches that of the general population. Many individuals with Down syndrome live into their 60s and beyond, with proper medical care and support.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Can individuals with Down syndrome lead independent lives?
+                </div>
+                <div class="collapse-content"> 
+                  <p>With appropriate support, education, and opportunities, many individuals with Down syndrome can lead relatively independent lives, including attending school, working, and participating in community activities. Support from family, healthcare professionals, and the community plays a crucial role in their independence and well-being.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    Can prenatal testing detect Down syndrome?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Yes, prenatal testing like ultrasound and blood tests can assess the likelihood, while diagnostic tests confirm the diagnosis.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    What are the risk factors for having a baby with Down syndrome?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Advanced maternal age (over 35) is the primary risk factor.</p>
+                </div>
+              </div><div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    What are the early signs of Down syndrome in babies?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Low muscle tone, flattened facial profile, slanting eyes, simian crease on the palm, and developmental delays.</p>
+                </div>
+              </div><div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    What are some common misconceptions about Down syndrome?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Common misconceptions include underestimating the abilities of individuals with Down syndrome, assuming they are always happy, and overlooking their diverse personalities and strengths.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    What are some unique talents and abilities of individuals with Down syndrome?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Individuals with Down syndrome often possess unique talents and abilities, such as artistic skills, musical talents, strong social skills, empathy, and a positive outlook on life.</p>
+                </div>
+              </div><div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    What are the emotional and psychological aspects of living with Down syndrome?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Individuals with Down syndrome may experience a range of emotions and psychological aspects related to self-esteem, identity, social interactions, and coping with challenges. Access to counseling, support networks, and positive environments is crucial for emotional well-being.</p>
+                </div>
+              </div><div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    Are there specific educational programs or schools tailored for individuals with Down syndrome?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Yes, there are specialized educational programs and schools that cater to the learning needs of individuals with Down syndrome. These programs often focus on individualized education plans, life skills training, social integration, and academic support tailored to their abilities.</p>
+                </div>
+              </div><div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    What are some recreational and leisure activities that individuals with Down syndrome enjoy?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Individuals with Down syndrome enjoy a wide range of recreational activities such as swimming, dancing, hiking, team sports, arts and crafts, music therapy, gardening, cooking classes, and social outings with friends and family.</p>
+                </div>
+              </div><div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    How can siblings and extended family members support individuals with Down syndrome?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Siblings and extended family members can offer support by fostering positive relationships, advocating for inclusion and opportunities, providing emotional support, participating in family activities, and educating themselves about Down syndrome to promote understanding and acceptance.</p>
+                </div>
+              </div><div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    What are some ways to celebrate and promote awareness of Down syndrome in the community?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Community events, awareness campaigns, fundraisers, social media initiatives, educational workshops, inclusion-focused programs, and participation in World Down Syndrome Day (March 21st) are effective ways to celebrate diversity, promote awareness, and advocate for inclusion and acceptance of individuals with Down syndrome.</p>
+                </div>
+              </div>
+          </div>
+    </main>
+
+    <footer class="footer footer-center bg-blue-500 text-yellow-300 mt-6 h-100vh w-100vw md:height-100vh pt-8 pl-4 md:ml-6 lg:ml-0 p-6 lg:p-10">
+        <aside>
+          <img src="assets/Care21-logo2.png" alt="" class="w-20">
+          <p class="font-bold">
+            CARE 21 <br>Providing reliable tech since 2024
+          </p> 
+          <p>Copyright © 2024 - All right reserved by Xenon Tech</p>
+        </aside>
+      </footer>
+</body>
+</html>

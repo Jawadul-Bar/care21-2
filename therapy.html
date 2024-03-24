@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Forum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- modal -->
+    <input type="checkbox" id="my_modal" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text">
+        <h3 class="font-bold text-lg">Sorry!</h3>
+        <p class="py-4">Booking Therapy is a privilege for our premium members.!</p>
+        <p><span class="text-blue-700">Log in</span> or <span class="text-blue-700">Register</span> to get started.</p>
+        <div class="modal-action">
+        <label for="my_modal" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <input type="checkbox" id="contact" class="modal-toggle" />
+    <div class="modal" role="dialog">
+    <div class="modal-box  font-text text-center">
+        <h3 class="font-bold text-lg">Contact</h3>
+        <p class="py-4"><b>Call Us: <br></b>01880-919005 or 01316-756636</p>
+        <p class="py-4"><b>Mail Us: <br></b>teamrecursionbd@gmail.com</p>
+        <div class="modal-action">
+        <label for="contact" class="btn">Close!</label>
+        </div>
+    </div>
+    </div>
+</head>
+<body>
+  <header class="md:container md:mx-auto lg:container lg:mx-auto sm:container sm:mx-auto xs:container xs:mx-auto xl:container xl:mx-auto pb-16">
+    <nav class="font-nav">
+        <div class="navbar bg-white fixed z-10 text-2xl">
+            <div class="navbar-start lg:mx-12 md:ml-1rem">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-1 shadow bg-base-100 rounded-box w-40">
+                  <li><a href="index.html">Home</a></li>
+                  <li>
+                    <a>Services</a>
+                    <ul class="p-2">
+                      <li><a href="doctors.html">Doctor</a></li>
+                       <li><a href="therapy.html">Therapy</a></li>
+                      <li><a href="exercise.html">Exercise</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a>Blog</a></li>
+                  <li><label for="contact">Contact</label></li>
+                </ul>
+              </div>
+              <a href="index.html">
+                <img src="assets/Care21-logo2.png" alt="Care21 Logo" class="w-10 h-auto cursor-pointer">
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <details>
+                    <summary>Services</summary>
+                    <ul class="p-2">
+                      <li><a href="doctors.html">Doctor</a></li>
+                      <li><a href="therapy.html">Therapy</a></li>
+                      <li><a href="exercise.html">Exercise</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a>Blog</a></li>
+                <li><label for="contact">Contact</label></li>
+              </ul>
+            </div>
+            <div class="navbar-end lg:mr-9 md:mr-9 mr-4">
+              <h4 class="text-blue-500 hover:text-yellow-500 text-xl">
+                <label for="my_login" class="btn button-one">Log In</label>
+              </h4>
+            </div>
+          </div>
+    </nav>
+</header>
+
+    <main class="p-6 lg:px-12">
+        <h1 class="text-center font-headings text-blue-700 text-2xl">
+            Our Therapy Services
+        </h1>
+        <div class="font-normal">
+            <div  class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 justify-center items-center gap-10 p-6 lg:p-16 lg:pt-6">
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="assets/speech-therapy.jpg" alt="Speech Therapy" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Speech Therapy</h2>
+                      <p class="text-left">
+                        Speech Therapy for individuals with Down syndrome improves communication skills and speech clarity, enhancing overall quality of life and social interactions.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="assets/Physical-Therapy.jpg" alt="Physical" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Physical Therapy</h2>
+                      <p class="text-left">
+                        Physical Therapy (PT) for individuals with Down syndrome aims to improve mobility, strength, and coordination through tailored exercises and interventions.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="assets/behaviour.jpg" alt="Behavior" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Behavior Therapy</h2>
+                      <p class="text-left">
+                        Down syndrome Behavioral Therapy targets behavior, social skills, and emotions to foster positive outcomes and improve overall well-being.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="assets/occupational-therapy.jpg" alt="Occupational" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Occupational Therapy
+                    </h2>
+                      <p class="text-left">  
+                        This is for individuals with Down syndrome improves independence by addressing daily living skills and fine motor abilities, promoting a better quality of life.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="assets/Sensory Integration Therapy.jpg" alt="Sensory Integration Therapy" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Sensory Integration Therapy</h2>
+                      <p>
+                        Sensory Integration Therapy enhances sensory processing and integration for improved functional abilities in individuals with Down syndrome.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="assets/CBT.jpg" alt="
+                      Cognitive Behavioral Therapy" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">
+                        Cognitive Behavioral Therapy</h2>
+                      <p>
+                        CBT improves mental wellness and adaptive functioning in Down syndrome individuals by addressing cognitive patterns & behaviors.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="assets/art-therapy.jpg" alt="Art Therapy" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Art Therapy</h2>
+                      <p>
+                        Art Therapy uses creative expression to enhance emotional well-being and cognitive skills in individuals with Down syndrome, promoting overall mental health.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="assets/vision.jpg" alt="Vision Therapy" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Vision Therapy</h2>
+                      <p>
+                        It is a specialized program designed to improve visual skills such as eye coordination, depth perception & visual processing in individuals with Down syndrome.
+                      </p>
+                    </div>
+                  </div>
+            </div>
+            <div class=" text-center font-normal mb-8">
+                <label for="my_modal" class="btn button-one">Book Therapy</label>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer footer-center bg-blue-500 text-yellow-300 mt-6 h-100vh w-100vw md:height-100vh pt-10 pl-4 md:ml-6 lg:ml-0 p-6 lg:p-10">
+        <aside>
+          <img src="assets/Care21-logo2.png" alt="" class="w-20">
+          <p class="font-bold">
+            CARE 21 <br>Providing reliable tech since 2024
+          </p> 
+          <p>Copyright © 2024 - All right reserved by Xenon Tech</p>
+        </aside>
+    </footer>
+</body>
+</html>
