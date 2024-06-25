@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script src="https://kit.fontawesome.com/9074d652df.js" crossorigin="anonymous"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Forum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -57,7 +59,8 @@
     </div>
 </head>
 <body>
-    <header class="md:container md:mx-auto lg:container lg:mx-auto sm:container sm:mx-auto xs:container xs:mx-auto xl:container xl:mx-auto pb-16">
+    <div>
+      <header class="md:container md:mx-auto lg:container lg:mx-auto sm:container sm:mx-auto xs:container xs:mx-auto xl:container xl:mx-auto pb-16">
         <nav class="font-nav">
             <div class="navbar bg-white fixed z-10 text-2xl">
                 <div class="navbar-start lg:mx-12 md:ml-1rem">
@@ -102,7 +105,7 @@
                     <li><label for="contact">Contact</label></li>
                   </ul>
                 </div>
-                <div class="navbar-end lg:mr-9 md:mr-9 mr-4">
+                <div class="navbar-end lg:mr-48 md:mr-9 mr-4">
                   <h4 class="text-blue-500 hover:text-yellow-500 text-xl">
                     <label for="my_login" class="btn button-one">Log In</label>
                   </h4>
@@ -110,6 +113,7 @@
               </div>
         </nav>
     </header>
+    </div>
 
     <main class="md:ml-6 lg:mx-6 p-10 pt-4 text-center">
         <div>
@@ -125,22 +129,62 @@
             </p>
         </div>
 
+        <!-- dedicated  -->
         <div class="mt-16">
-            <h1 class="text-yellow-500 text-2xl pl-2 font-bold font-headings">
-                Our Mission and Values
-            </h1>
+          <h1 class="text-yellow-500 text-2xl pl-2 font-bold font-headings">
+              Team & Tribute
+          </h1>
+          <div class="">
+            <div class="flex justify-center">
+              <div class="card w-[500px] bg-base-200 shadow-xl mt-6 justify-center">
+                <figure><img src="assets/ayman.jpg" alt="" class="w-[full] h-[200px] rounded-2xl mt-6"/></figure>
+                <div class="card-body">
+                  <h1 class=" text-xl pl-2 font-bold font-headings">
+                    In Loving Memory of <br> 
+                    <span class="text-red-500">Ayman Haque Anas</span>
+                  </h1>
+                  <p class="text-xl text-justify mt-4">This website is dedicated to the incredible life of Ayman Haque Anas, our beloved brother. Ayman brought so much joy and love into our lives with his infectious smile and his kind heart. Although he is no longer with us physically, his memory will continue to inspire us every day.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <p class="font-text text-xl text-left pt-6">
-                At Care 21, our mission is deeply rooted in our core values of compassion, integrity, excellence, and empowerment. We are committed to:<br><br>
-
-                <b>Empowering Lives:</b> We strive to empower individuals with Down Syndrome to lead fulfilling lives by providing comprehensive and personalized care that meets their unique needs and aspirations.<br><br>
-                
-                <b>Embracing Diversity:</b> We celebrate diversity and embrace the uniqueness of each individual, fostering an inclusive environment where everyone is valued and respected.<br><br>
-                
-                <b>Advancing Care:</b> Through continuous learning, innovation, and collaboration, we aim to advance the standard of care for individuals with Down Syndrome, ensuring they receive the best possible support and services.<br><br>
-                
-                <b>Advocacy and Awareness:</b> Care 21 is dedicated to advocating for the rights and well-being of individuals with Down Syndrome. We actively promote awareness, education, and acceptance within the community.
-            </p>
+          <div class="flex sm:flex-wrap gap-24 items-center justify-center mt-10 bg-black p-10 rounded-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-24 items-center">
+              <div class="flex items-center">
+                <h1 class="text-2xl font-bold text-white">Meet Our Team <i class="fa-solid fa-arrow-right"></i></h1>
+              </div>
+              <div class="card w-[150px] lg:w-[250px] bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="assets/riyad-vai.jpg" alt="" class="rounded-xl w-[150px]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title lg:text-xl">Riyadul Haque</h2>
+                  <p class="lg:text-lg">ML Developer</p>
+                </div>
+              </div>
+  
+              <div class="card w-[150px] lg:w-[250px] bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="assets/papri-sen.jpg" alt="" class="rounded-xl w-[130px]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-xl">Papri Sen</h2>
+                  <p class="text-lg">ML Developer</p>
+                </div>
+              </div>
+  
+              <div class="card w-[150px] lg:w-[250px] bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="assets/jawad.jpg" alt="" class="rounded-xl w-[400px]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-xl">Sheikh Jawadul Bar</h2>
+                  <p class="text-lg">Web Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="mt-16">

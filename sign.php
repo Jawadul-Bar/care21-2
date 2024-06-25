@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// Check if member is logged in
+if (!isset($_SESSION['username'])) {
+    header("Location: index.html"); // Redirect to member login page if not logged in
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
